@@ -3,7 +3,7 @@
 <head><title>Home Page</title></head>
 <body>
 	<h1>Austine Onwubiko</h1>
-	<div>
+	<div class="hometabs">
 		<button>About</button>
 		<button>Journals</button>
 		<button>Conference Paper</button>
@@ -12,13 +12,28 @@
 </html>
 
 <style>
+	.hometabs{
+		display:flex;
+		gap:20px;
+	}
+
 	h1{
 		text-align:center;
 		color:white;
 		background-color:black;
+		font-size:70px;
 	}
 
 	button{
-		width:120px;
+		width:180px;
+		height:30px;
+		flex:1;
+		background-color:black;
+		color:white;
+	}
+
+	button:hover{
+		background-color:white;
+		color:black;
 	}
 </style>
