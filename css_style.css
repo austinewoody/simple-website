@@ -1,24 +1,87 @@
-.home_image{
-    background-image: url("https://i.ibb.co/mXcPfnS/home-image.jpg");
-    background-size: cover;
-    height: 100vh;
+
+.bio_image{
+    width: 500px;
+    height: 500px;
+    margin-left: 40px;
 }
 
-.home_tab{
-    margin-left: 800px;
-    padding-top: 50px;
+header{
+    display: flex;
+    gap: 5em;
+    border-radius: 5px;
+    background-color: bisque;
+    height: 800px;
+    border-bottom: thin solid black;
+    
 }
+
+.header_div{
+    padding-left: 10px;
+    padding-top: 300px;
+}
+
+.header_div h1{
+    font-size: 30px;
+    color:green;
+}
+
+.header_div h3{
+    font-size: 50px;
+    color: green;
+}
+
+.paragraph{
+    text-align: justify;
+    margin-right: 100px;
+    font-size: 18px;
+}
+
+.info{
+    font-size: 20px;
+}
+
+.uws{
+    color: red;
+}
+
+.first_section{
+    display: flex;
+    gap: 10em;
+    margin-top: 30px;
+    
+}
+
+.second_section{
+    display: flex;
+    gap: 10em;
+    margin-top: 50px;
+}
+
 
 button{
-    width: 180px;
-    height: 50px;
-    margin-left: 15px;
-    background-color: black;
-    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: darkgreen;
     color: white;
-    border: thin solid white;
 }
 
 button:hover{
-    border: thin solid pink;
+    background-color: black;
+}
+
+.education h2{
+    font-size: 60px;
+    border-bottom: thin solid red;
+}
+
+.education label{
+    font-size: 20px;
+}
+
+.edu_image{
+    width: 400px;
+    height: 330px;
+    margin-left: 250px;
+    margin-top: 100px;
 }
