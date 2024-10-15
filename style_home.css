@@ -1,0 +1,128 @@
+.header{
+    background-color: rgb(2, 2, 50);
+    padding-bottom: 70px;
+    border-radius: 4px;
+}
+
+
+.bio_pic{
+    border-radius: 50%;
+    width: 40vw;
+    height: 20vh;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
+.bio_text1{
+    text-align: center;
+    color: white;
+}
+
+.bio_text2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.main_about{
+    background-color: rgb(222, 147, 49);
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.about_head{
+    color: white;
+}
+
+.about{
+    font-size: 1.3rem;
+    color: white;
+    
+}
+
+.main_pic{
+    border-radius: 50%;
+    width: 50vw;
+    height: 20vh;
+    margin-left: 80px;
+}
+
+.main_technologies{
+    background-color: rgb(2, 2, 50);
+    color: white;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.flex_technologies{
+    display: flex;
+    gap: 10rem;
+}
+
+.futo{
+    margin-left: 10px;
+}
+
+.gkc{
+    margin-left: 10px;
+}
+
+.uws{
+    margin-left: 10px;
+}
+
+.sbcp{
+    width: 25vw;
+    height: 30vh;
+}
+
+.dtbc{
+    width: 25vw;
+    height: 30vh;
+}
+
+.kpi{
+    width: 25vw;
+    height: 30vh;
+}
+
+.main_education img{
+    width: 20vw;
+    height: 10vh;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.publication_head{
+    color: white;
+}
+
+.main_publication{
+    background-color: rgb(2, 2, 50);
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.main_publication button{
+    background-color: coral;
+    border: thin solid coral;
+    border-radius: 6px;
+    
+}
+
+.main_publication a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+}
+
+
