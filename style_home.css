@@ -1,15 +1,15 @@
-.wrapper{
+/* General Styles */
+.wrapper {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header{
+.header {
     background-color: rgb(244, 244, 248);
     padding-bottom: 70px;
     border-radius: 4px;
 }
 
-
-.bio_pic{
+.bio_pic {
     border-radius: 50%;
     width: 40vw;
     height: 20vh;
@@ -17,305 +17,282 @@
     margin-left: 120px;
 }
 
-.bio_text1{
+.bio_text1, .bio_text2 {
     text-align: center;
     color: black;
 }
 
-.bio_text2{
-    text-align: center;
+.bio_text2 {
     font-size: 2.5rem;
-    color: black;
 }
 
-.main_about{
+.main_about {
     background-color: rgb(26, 16, 3);
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-    
+    padding: 50px 20px;
 }
 
-.about_head{
+.about_head {
     color: white;
 }
 
-.about{
+.about {
     font-size: 1.3rem;
     color: white;
-   
-    
 }
 
-.main_pic{
+.main_pic {
     border-radius: 50%;
     width: 40vw;
     height: 20vh;
     margin-left: 90px;
 }
 
-.main_technologies{
+.main_technologies {
     background-color: rgb(2, 2, 50);
     color: white;
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding: 50px 20px;
 }
 
-.flex_technologies{
+.flex_technologies {
     display: flex;
     gap: 7rem;
 }
 
-.part1 img{
+.part1 img, .part2 img {
     width: 6vw;
     height: 3vh;
     margin-left: 4px;
 }
 
-.part2 img{
-    width: 6vw;
-    height: 3vh;
-    margin-left: 4px;
-}
-
-.futo{
+.futo, .gkc, .uws {
     margin-left: 10px;
 }
 
-.gkc{
-    margin-left: 10px;
-}
-
-.uws{
-    margin-left: 10px;
-}
-
-.sbcp{
+.sbcp, .dtbc, .kpi {
     width: 25vw;
     height: 30vh;
 }
 
-.dtbc{
-    width: 25vw;
-    height: 30vh;
-}
-
-.kpi{
-    width: 25vw;
-    height: 30vh;
-}
-
-.main_education img{
+.main_education img {
     width: 20vw;
     height: 10vh;
     margin-bottom: 20px;
     margin-left: 30px;
 }
 
-.publication_head{
+.publication_head {
     color: white;
 }
 
-.main_publication{
+.main_publication {
     background-color: rgb(2, 2, 50);
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding: 50px 20px;
 }
 
-.main_publication button{
+.main_publication button {
     background-color: coral;
     border: thin solid coral;
     border-radius: 6px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.main_publication a{
+.main_publication a {
     text-decoration: none;
     color: white;
 }
 
-.project{
+.project {
     font-size: 60px;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
 
+/* Media Queries for Responsive Design */
 
-@media (min-width: 768px){
-    .bio_pic{
-        border-radius: 50%;
+/* Small screens (mobile-first) */
+@media (max-width: 480px) {
+    .bio_pic {
+        width: 60vw;
+        height: 30vh;
+        margin-left: 0;
+    }
+
+    .bio_text1, .bio_text2 {
+        font-size: 1.2rem;
+    }
+
+    .main_pic {
+        width: 60vw;
+        height: 30vh;
+        margin-left: 0;
+    }
+
+    .flex_technologies {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .part1 img, .part2 img {
+        width: 15vw;
+        height: 7vh;
+    }
+
+    .sbcp, .dtbc, .kpi {
+        width: 80vw;
+        height: 25vh;
+    }
+
+    .main_education img {
         width: 50vw;
         height: 30vh;
-        margin-top: 60px;
-        margin-left: 180px;
+        margin-left: 0;
     }
 
-    .bio_text1{
-        text-align: center;
-        color: black;
-        font-size: 1.5rem;
-    }
-    
-    .bio_text2{
-        text-align: center;
-        font-size: 4rem;
-        color: black;
-    }
-
-    .about{
-        font-size: 2rem;
-        color: white;   
-    }
-
-    .about_head{
-        color: white;
-        font-size: 3rem;
-    }
-
-    .main_pic{
-        border-radius: 50%;
-        width: 50vw;
-        height: 30vh;
-        margin-left: 150px;
-    }
-
-    .technologies_head{
-        font-size: 3rem;
-    }
-
-    .flex_technologies{
-        display: flex;
-        gap: 20rem;
-    }
-
-    .flex_technologies p{
-        font-size: 2rem;
-    }
-
-    .education_head{
-        font-size: 3rem;
-    }
-
-    .main_education p{
-        font-size: 2rem;
-    }
-
-    .main_education img{
-        width: 25vw;
-        height: 15vh;
-        margin-bottom: 20px;
-        margin-left: 30px;
-    }
-
-    .publication_head{
-        color: white;
-        font-size: 3rem;
-    }
-
-    .main_publication button{
-        background-color: coral;
-        border: thin solid coral;
-        border-radius: 6px;
-        margin-left: 30px;  
-    }
-
-    .main_publication a{
-        text-decoration: none;
-        color: white;
+    .footer {
         font-size: 1.5rem;
     }
 
-    .footer{
-        text-align: center;
-        font-size: 2rem;
+    .project {
+        font-size: 50px;
     }
-    
 }
 
+/* Medium screens (tablets and larger mobile devices) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .bio_pic {
+        width: 50vw;
+        height: 25vh;
+        margin-left: 0;
+    }
 
+    .bio_text1, .bio_text2 {
+        font-size: 1.5rem;
+    }
 
-@media only screen and (min-width: 1024px){
+    .main_pic {
+        width: 50vw;
+        height: 25vh;
+        margin-left: 0;
+    }
 
-    .header{
-        background-color: rgb(244, 244, 248);
+    .flex_technologies {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .part1 img, .part2 img {
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .sbcp, .dtbc, .kpi {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .main_education img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .footer {
+        font-size: 2rem;
+    }
+
+    .project {
+        font-size: 50px;
+    }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+    .header {
         display: flex;
         padding: 150px;
     }
 
-    .header .bio_text1{
-        text-align: center;
-        color: black;
-    }
-    
-    .bio_text2{
-        text-align: center;
-        font-size: 2.5rem;
-        color: black;
-    }
-
-    .bio_pic{
-        border-radius: 50%;
+    .bio_pic {
         width: 20vw;
         height: 30vh;
-        margin-top: 60px;
         margin-left: 480px;
     }
 
-    .main_about{
-        padding: 100px;
+    .bio_text2 {
+        font-size: 2.5rem;
     }
 
-    .main_pic{
-        border-radius: 50%;
+    .main_about {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .main_pic {
         width: 40vw;
         height: 30vh;
         margin-left: 220px;
     }
 
-    .bio_text1{
-        text-align: center;
-        color: white;
-        font-size: 1.8rem;
-    }
-
-    .main_about{
-        display: flex;
-        gap: 2rem;
-    }
-
-    .part1 img{
-        width: 5vw;
-        height: 5vh;
-        margin-left: 4px;
-    }
-    
-    .part2 img{
-        width: 5vw;
-        height: 5vh;
-        margin-left: 4px;
-    }
-
-    .flex_technologies{
+    .flex_technologies {
         justify-content: center;
     }
 
-    .main_education img{
+    .part1 img, .part2 img {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .main_education img {
         width: 10vw;
         height: 10vh;
-        margin-bottom: 20px;
         margin-left: 50px;
     }
 
-    .main_publication button{
+    .main_publication button {
         margin-left: 75px;
         margin-bottom: 150px;
     }
 }
 
+/* Extra large screens (large desktops and TVs) */
+@media (min-width: 1440px) {
+    .bio_pic {
+        width: 15vw;
+        height: 25vh;
+    }
+
+    .main_pic {
+        width: 30vw;
+        height: 25vh;
+    }
+
+    .flex_technologies {
+        gap: 10rem;
+    }
+
+    .part1 img, .part2 img {
+        width: 6vw;
+        height: 3vh;
+    }
+
+    .sbcp, .dtbc, .kpi {
+        width: 25vw;
+        height: 30vh;
+    }
+
+    .main_education img {
+        width: 18vw;
+        height: 10vh;
+    }
+
+    .footer {
+        font-size: 2rem;
+    }
+
+    .project {
+        font-size: 65px;
+    }
+}
