@@ -1,298 +1,145 @@
 /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
 .wrapper {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
 .header {
-    background-color: rgb(244, 244, 248);
-    padding-bottom: 70px;
-    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
 }
 
 .bio_pic {
     border-radius: 50%;
-    width: 40vw;
-    height: 20vh;
-    margin-top: 60px;
-    margin-left: 120px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
 }
 
-.bio_text1, .bio_text2 {
-    text-align: center;
-    color: black;
+.bio_text1 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .bio_text2 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
 }
 
 .main_about {
-    background-color: rgb(26, 16, 3);
-    padding: 50px 20px;
+    background: #fff;
+    padding: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about_head {
-    color: white;
+    color: #1a1a2e;
+    text-align: center;
 }
 
 .about {
-    font-size: 1.3rem;
-    color: white;
-}
-
-.main_pic {
-    border-radius: 50%;
-    width: 40vw;
-    height: 20vh;
-    margin-left: 90px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
 .main_technologies {
-    background-color: rgb(2, 2, 50);
+    background: #16213e;
     color: white;
-    padding: 50px 20px;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.technologies_head {
+    text-align: center;
 }
 
 .flex_technologies {
     display: flex;
-    gap: 7rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .part1 img, .part2 img {
-    width: 6vw;
-    height: 3vh;
-    margin-left: 4px;
+    width: 50px;
+    height: 50px;
 }
 
-.futo, .gkc, .uws {
-    margin-left: 10px;
-}
-
-.sbcp, .dtbc, .kpi {
-    width: 25vw;
-    height: 30vh;
-}
-
-.main_education img {
-    width: 20vw;
-    height: 10vh;
-    margin-bottom: 20px;
-    margin-left: 30px;
-}
-
-.publication_head {
-    color: white;
-}
-
-.main_publication {
-    background-color: rgb(2, 2, 50);
-    padding: 50px 20px;
-}
-
-.main_publication button {
-    background-color: coral;
-    border: thin solid coral;
-    border-radius: 6px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.main_publication a {
-    text-decoration: none;
-    color: white;
-}
-
-.project {
-    font-size: 60px;
-}
-
-.footer {
-    text-align: center;
-}
-
-/* Media Queries for Responsive Design */
-
-/* Small screens (mobile-first) */
-@media (max-width: 480px) {
-    .bio_pic {
-        width: 60vw;
-        height: 30vh;
-        margin-left: 0;
-    }
-
-    .bio_text1, .bio_text2 {
-        font-size: 1.2rem;
-    }
-
-    .main_pic {
-        width: 60vw;
-        height: 30vh;
-        margin-left: 0;
-    }
-
-    .flex_technologies {
-        flex-direction: column;
-        gap: 3rem;
-        align-items: center;
-    }
-
-    .part1 img, .part2 img {
-        width: 15vw;
-        height: 7vh;
-    }
-
-    .sbcp, .dtbc, .kpi {
-        width: 80vw;
-        height: 25vh;
-    }
-
-    .main_education img {
-        width: 50vw;
-        height: 30vh;
-        margin-left: 0;
-    }
-
-    .footer {
-        font-size: 1.5rem;
-    }
-
-    .project {
-        font-size: 50px;
-    }
-}
-
-/* Medium screens (tablets and larger mobile devices) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .bio_pic {
-        width: 50vw;
-        height: 25vh;
-        margin-left: 0;
-    }
-
-    .bio_text1, .bio_text2 {
-        font-size: 1.5rem;
-    }
-
-    .main_pic {
-        width: 50vw;
-        height: 25vh;
-        margin-left: 0;
-    }
-
-    .flex_technologies {
-        flex-direction: column;
-        gap: 5rem;
-        align-items: center;
-    }
-
-    .part1 img, .part2 img {
-        width: 10vw;
-        height: 5vh;
-    }
-
-    .sbcp, .dtbc, .kpi {
-        width: 70vw;
-        height: 25vh;
-    }
-
-    .main_education img {
-        width: 40vw;
-        height: 25vh;
-    }
-
-    .footer {
-        font-size: 2rem;
-    }
-
-    .project {
-        font-size: 50px;
-    }
-}
-
-/* Large screens (desktop) */
-@media (min-width: 1024px) {
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
     .header {
-        display: flex;
-        padding: 150px;
+        padding: 30px 10px;
     }
 
     .bio_pic {
-        width: 20vw;
-        height: 30vh;
-        margin-left: 480px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio_text1 {
+        font-size: 1.8rem;
     }
 
     .bio_text2 {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 
     .main_about {
-        display: flex;
-        gap: 2rem;
+        padding: 30px;
     }
 
-    .main_pic {
-        width: 40vw;
-        height: 30vh;
-        margin-left: 220px;
-    }
-
-    .flex_technologies {
-        justify-content: center;
-    }
-
-    .part1 img, .part2 img {
-        width: 5vw;
-        height: 5vh;
-    }
-
-    .main_education img {
-        width: 10vw;
-        height: 10vh;
-        margin-left: 50px;
-    }
-
-    .main_publication button {
-        margin-left: 75px;
-        margin-bottom: 150px;
+    .about {
+        font-size: 1rem;
     }
 }
 
-/* Extra large screens (large desktops and TVs) */
-@media (min-width: 1440px) {
-    .bio_pic {
-        width: 15vw;
-        height: 25vh;
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 10px;
     }
 
-    .main_pic {
-        width: 30vw;
-        height: 25vh;
+    .bio_pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bio_text1 {
+        font-size: 1.5rem;
+    }
+
+    .bio_text2 {
+        font-size: 0.9rem;
+    }
+
+    .main_about {
+        padding: 20px;
+    }
+
+    .about {
+        font-size: 0.9rem;
     }
 
     .flex_technologies {
-        gap: 10rem;
-    }
-
-    .part1 img, .part2 img {
-        width: 6vw;
-        height: 3vh;
-    }
-
-    .sbcp, .dtbc, .kpi {
-        width: 25vw;
-        height: 30vh;
-    }
-
-    .main_education img {
-        width: 18vw;
-        height: 10vh;
-    }
-
-    .footer {
-        font-size: 2rem;
-    }
-
-    .project {
-        font-size: 65px;
+        flex-direction: column;
+        align-items: center;
     }
 }
