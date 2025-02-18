@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -15,12 +15,12 @@ body {
 
 .header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    padding: 40px 20px;
-    text-align: center;
+    justify-content: center;
+    background-color: #222;
     color: white;
+    padding: 50px 20px;
+    text-align: center;
     border-radius: 10px;
 }
 
@@ -28,47 +28,35 @@ body {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
-    border: 5px solid #fff;
+    margin-right: 20px;
 }
 
 .bio_text1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
 .bio_text2 {
     font-size: 1.2rem;
+    color: #bbb;
 }
 
-.main_about {
-    background: #fff;
-    padding: 50px;
-    margin: 20px 0;
+.main_about, .main_technologies, .main_education, .main_services, .main_publication {
+    background-color: white;
+    padding: 40px;
+    margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about_head {
-    color: #1a1a2e;
+.about_head, .technologies_head, .education_head, .publication_head {
+    color: #222;
     text-align: center;
 }
 
 .about {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
-}
-
-.main_technologies {
-    background: #16213e;
-    color: white;
-    padding: 50px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.technologies_head {
     text-align: center;
 }
 
@@ -76,7 +64,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 20px;
+    text-align: center;
 }
 
 .part1 img, .part2 img {
@@ -84,58 +73,58 @@ body {
     height: 50px;
 }
 
-/* Responsive Design Adjustments */
-@media (max-width: 768px) {
-    .header {
-        padding: 30px 10px;
-    }
-
-    .bio_pic {
-        width: 120px;
-        height: 120px;
-    }
-
-    .bio_text1 {
-        font-size: 1.8rem;
-    }
-
-    .bio_text2 {
-        font-size: 1rem;
-    }
-
-    .main_about {
-        padding: 30px;
-    }
-
-    .about {
-        font-size: 1rem;
-    }
+.service {
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
+.main_publication button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.main_publication button:hover {
+    background-color: #e65c50;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .header {
-        padding: 20px 10px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .bio_pic {
-        width: 100px;
-        height: 100px;
-    }
-
-    .bio_text1 {
-        font-size: 1.5rem;
-    }
-
-    .bio_text2 {
-        font-size: 0.9rem;
-    }
-
-    .main_about {
-        padding: 20px;
-    }
-
-    .about {
-        font-size: 0.9rem;
+        margin: 0 auto 20px;
     }
 
     .flex_technologies {
