@@ -485,6 +485,21 @@ footer{
   height:8px;
 }
 
+.project-shot{
+  margin:14px 0 12px;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid color-mix(in oklab, var(--ring), transparent 55%);
+  background: color-mix(in oklab, var(--bg-soft), transparent 0%);
+  box-shadow: var(--shadow);
+}
+
+.project-shot img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
 /* Responsive */
 @media (max-width: 1000px){
   .hero{
