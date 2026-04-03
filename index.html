@@ -30,6 +30,7 @@
       <a href="#tech">Technologies</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#profiles">Profiles</a>
       <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
       <button id="themeToggle" class="btn ghost">🌗</button>
@@ -183,6 +184,37 @@
 </section>
 
 
+<section id="profiles" class="container section">
+  <h2>Professional Profiles</h2>
+
+  <div class="grid">
+
+    <div class="service">
+      <h3>Personal Website</h3>
+      <p>Main portfolio and professional profile showcasing my work, research, and technical background.</p>
+      <p>
+        <a href="https://austineonwubiko.com" target="_blank" rel="noopener">Visit Website</a>
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>GitHub</h3>
+      <p>Public code repositories, technical projects, and software development work.</p>
+      <p>
+        <a href="https://github.com/austinewoody" target="_blank" rel="noopener">View GitHub Profile</a>
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>PyPI</h3>
+      <p>Published Python package contributions for the developer ecosystem.</p>
+      <p>
+        <a href="https://pypi.org/project/collide-circle/" target="_blank" rel="noopener">View collide-circle Package</a>
+      </p>
+    </div>
+
+  </div>
+</section>
 
 <!-- PUBLICATIONS -->
 <section id="publications" class="container section">
@@ -231,6 +263,33 @@
 
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (href.length > 1) {
+        e.preventDefault();
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  const toggleBtn = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('theme');
+  if (stored) document.documentElement.setAttribute('data-theme', stored);
+
+  toggleBtn?.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'light' ? '' : 'light';
+    if (next) {
+      document.documentElement.setAttribute('data-theme', next);
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    localStorage.setItem('theme', next);
+  });
+</script>
 
 </body>
 </html>
