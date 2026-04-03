@@ -500,6 +500,19 @@ footer{
   display:block;
 }
 
+footer h2,
+footer h3{
+  margin-top:0;
+}
+
+footer .chip{
+  margin:0 8px 8px 0;
+}
+
+footer p{
+  line-height:1.8;
+}
+
 /* Responsive */
 @media (max-width: 1000px){
   .hero{
